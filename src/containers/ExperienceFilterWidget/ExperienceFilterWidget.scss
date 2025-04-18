@@ -1,0 +1,25 @@
+/* ExperienceFilterWidget.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.filter-widget {
+    @include filter-widget-style();
+
+    section {
+
+        .filter-option-container-date {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            input[type='date'] {
+                @include input-date-style();
+            }
+
+            label {
+                @include filter-option-label-style();
+            }
+        }
+
+    }
+}

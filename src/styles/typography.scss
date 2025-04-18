@@ -1,0 +1,150 @@
+/* typogaphy.scss */
+
+@import 'variables.scss';
+
+// Font Family
+$font-family: 'Montserrat', 'Arial', sans-serif;
+
+// Font Sizes
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 16px;
+$font-size-xlarge: 20px;
+$font-size: 16px;
+
+$button-font-size: 16px;
+
+$tag-font-size: 12px;
+
+$card-font-size: 14px;
+$card-h1-font-size: 16px;
+$card-h2-font-size: 12px;
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 900;
+$font-weight-light: 300;
+
+// Line Heights
+$line-height-normal: 1.2;
+$line-height-heading: 1.0;
+
+// Font Colors
+$text-color: $primary-color;
+$heading-color: $primary-color;
+$subheading-color: $primary-color;
+$paragraph-color: $primary-color;
+
+$button-font-color: $primary-color;
+
+
+// Mixins
+
+// Main Typography Mixin
+@mixin h1-style {
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+    line-height: $line-height-heading;
+}
+
+@mixin h2-style {
+    font-size: $font-size-large;
+    font-weight: $font-weight-normal;
+    color: $subheading-color;
+    line-height: $line-height-heading;
+}
+
+@mixin h3-style {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-normal;
+    color: $subheading-color;
+    line-height: $line-height-heading;
+}
+
+@mixin paragraph-style {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-normal;
+    color: $paragraph-color;
+    line-height: $line-height-normal;
+}
+
+@mixin small-text-style {
+    font-size: $font-size-small;
+    font-weight: $font-weight-normal;
+    color: $paragraph-color;
+    line-height: $line-height-normal;
+}
+
+// Mixin for Card Title and Subtitle
+@mixin card-title-style {
+    font-size: $card-h1-font-size;
+    font-weight: $font-weight-bold;
+    color: $card-h1-color;
+    line-height: $line-height-heading;
+}
+
+@mixin card-subtitle-style {
+    font-size: $card-h2-font-size;
+    font-weight: $font-weight-normal;
+    color: $card-h2-color;
+    line-height: $line-height-heading;
+}
+
+@mixin card-text-style {
+    font-size: $card-font-size;
+    font-weight: $font-weight-normal;
+    color: $card-font-color;
+    line-height: $line-height-normal;
+}
+
+// Mixin for Tag Styles
+@mixin tag-text-style {
+    font-size: $tag-font-size;
+    font-weight: $font-weight-normal;
+    color: $primary-color;
+    line-height: $line-height-normal;
+}
+
+// Mixin for Filter Widget Styles
+@mixin filter-h1-style {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+    line-height: $line-height-heading;
+}
+
+@mixin filter-h2-style {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    color: $heading-color;
+    line-height: $line-height-heading;
+}
+
+@mixin filter-option-label-style {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-light;
+    color: $heading-color;
+    line-height: $line-height-heading;
+}
+
+// Mixin for Input and Button Styles
+@mixin button1-text-style {
+    font-size: $button-font-size;
+    font-weight: $font-weight-bold;
+    color: $button-font-color;
+    line-height: $line-height-normal;
+}
+
+@mixin button2-text-style {
+    font-size: $button-font-size;
+    font-weight: $font-weight-normal;
+    color: $button-font-color;
+    line-height: $line-height-normal;
+}
+
+
+
+
+

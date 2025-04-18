@@ -1,0 +1,11 @@
+/* TagContainer.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.tag-container {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+}

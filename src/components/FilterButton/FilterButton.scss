@@ -1,0 +1,33 @@
+/* FilterButton.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+@import '../../styles/typography.scss';
+
+.filter-button {
+    button{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: $background-color;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        border: none;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            @include button2-text-style();
+        }
+
+        &:hover {
+            background-color: $tertiary-color;
+            cursor: pointer;
+        }
+
+    }
+}

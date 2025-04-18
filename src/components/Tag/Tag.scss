@@ -1,0 +1,29 @@
+/* Tag.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+@import '../../styles/typography.scss';
+
+.tag {
+    display: inline-flex;
+    max-width: fit-content;
+    min-width: fit-content;
+    padding: $tag-padding;
+    gap: $tag-gap;
+    border-radius: $tag-border-radius;
+    box-shadow: $tag-box-shadow;
+
+    align-items: center;
+
+    .tag-emoji {
+        @include tag-text-style();
+        margin: 0;
+    }
+
+    .tag-text {
+        @include tag-text-style();
+        white-space: nowrap;
+        margin: 0;
+    }
+}

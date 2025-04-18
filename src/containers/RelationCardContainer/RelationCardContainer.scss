@@ -1,0 +1,13 @@
+/* RelationCardContainer.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.relation-card-link {
+    text-decoration: none;
+}
+
+.relation-card-container{
+    @include card-container-style($card-container-gap);
+}
+

@@ -1,0 +1,32 @@
+/* variables.scss */
+
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$tertiary-color: #f0f0f0;
+
+$background-color: $secondary-color;
+
+$text-color: $primary-color;
+
+// Card styles
+$card-h1-color: $primary-color;
+$card-h2-color: $primary-color;
+
+
+$card-corner-radius: 20px;
+$card-background-color: $secondary-color;
+$card-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+$card-content-padding: 20px 28px;
+$card-content-gap: 0;
+
+
+
+$tag-background-color: $tertiary-color;
+$tag-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+$tag-border-radius: 20px;
+$tag-padding: 5px 10px;
+$tag-gap: 5px;
+
+$card-container-gap: 20px;
+

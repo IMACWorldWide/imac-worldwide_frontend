@@ -1,0 +1,13 @@
+/* ExperienceCardContainer.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.experience-card-link{
+    text-decoration: none;
+    color: $text-color
+}
+
+.experience-card-container {
+    @include card-container-style($card-container-gap, 3);
+}

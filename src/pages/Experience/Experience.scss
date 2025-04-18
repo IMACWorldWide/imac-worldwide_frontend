@@ -1,0 +1,54 @@
+/* Experience.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.experience-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1, h2 {
+        margin: 0;
+    }
+}
+
+
+.experience-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.experience-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: $card-box-shadow;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.experience-contact-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+
+    p, label {
+        margin: 0;
+    }
+}
+
+.experience-course {
+    padding: 0 20px;
+}

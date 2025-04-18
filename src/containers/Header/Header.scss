@@ -1,0 +1,62 @@
+/* Header.scss
+ *
+ * This file contains the styles for the Header component.
+ * It includes styles for the header, logo, navigation links, and search bar.
+ */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+    form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid $tertiary-color;
+            margin-left: 20px;
+        }
+
+        input[type="submit"] {
+            display: none;
+        }
+    }
+
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        border: none;
+        color: $background-color;
+        background-color: rgb(36, 138, 248);
+
+        border-radius: 5px;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(36, 138, 248, 0.8);
+        }
+
+        &:active {
+            background-color: rgb(36, 138, 248, 0.6);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

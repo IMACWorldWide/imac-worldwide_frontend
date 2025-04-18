@@ -1,0 +1,55 @@
+/* global.scss */
+
+@import './variables.scss';
+@import './mixins.scss';
+
+@import './typography.scss';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $text-color;
+    background-color: $background-color;
+    line-height: 1.6;
+}
+
+main {
+    width: 800px;
+    margin: 40px auto;
+}
+
+h1 {
+    @include h1-style;
+}
+
+h2 {
+    @include h2-style;
+}
+
+h3 {
+    @include h3-style;
+}
+
+.subtitle {
+    @include h3-style;
+}
+
+p {
+    @include paragraph-style;
+}
+
+.card {
+    h1 {
+        @include card-title-style;
+    }
+
+    h2 {
+        @include card-subtitle-style;
+    }
+
+    p {
+        @include paragraph-style;
+    }
+}
+
+

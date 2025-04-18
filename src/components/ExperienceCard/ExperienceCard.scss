@@ -1,0 +1,26 @@
+/* ExperienceCard.scss */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.experience-card {
+    @include card-style($card-background-color, $card-box-shadow);
+    @include flex-center(column, center);
+
+    img{
+        @include card-image-style();
+    }
+
+    .experience-card-content {
+        @include card-content-style($card-content-padding);
+        @include flex-center(column, center);
+    }
+
+    .experience-card-summary {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 0;
+    }
+}

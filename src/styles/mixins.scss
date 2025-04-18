@@ -1,0 +1,103 @@
+/* mixins.scss */
+
+@import './variables.scss';
+@import './typography.scss';
+
+@mixin flex-center($direction: row, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin card-style($background-color: $card-background-color, $box-shadow: $card-box-shadow) {
+    border-radius: $card-corner-radius;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+}
+
+@mixin card-image-style(){
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+}
+
+@mixin card-content-style($padding: 20px) {
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    gap: $card-content-gap;
+}
+
+@mixin card-title-style($color: $primary-color, $font-size: 24px, $font-weight: 600) {
+    @include card-title-style();
+    color: $color;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+}
+
+@mixin card-container-style($gap: 20px, $colomns: 3) {
+    display: grid;
+    grid-template-columns: repeat($colomns, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin filter-widget-style() {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $background-color;
+    box-shadow: $card-box-shadow;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+
+    section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .filter-option-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                @include filter-h2-style();
+            }
+        }
+
+        .filter-option-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+    }
+}
+
+@mixin input-date-style {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $background-color;
+    box-shadow: $card-box-shadow;
+    border: none;
+    color: $primary-color;
+
+    @include button2-text-style();
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px $tertiary-color ;
+    }
+
+    &:hover {
+        box-shadow: 0 0 0 1px $tertiary-color ;
+    }
+}
