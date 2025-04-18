@@ -9,6 +9,7 @@ import router from "./index";
 
 // Importing the global styles
 import './styles/global.scss';
+import { Footer } from './containers/Footer/Footer';
 
 createRoot(document.getElementById('root')!).render(
   <>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <RouterProvider router={router} />
     </StrictMode>
+    <Footer />
   </>,
 )
