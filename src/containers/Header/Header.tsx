@@ -12,7 +12,9 @@ export default function Header() {
 
     return (
         <header className="header">
-            <img src="/" alt="logo" id='logo' />
+            <a href="/">
+                <img src="/vite.svg" alt="logo" id='logo' />
+            </a>
             <form id="search" action="/search" method="get">
                 <input type='search' placeholder={search ? search : 'Search...'} id='search' name='search' />
                 <input type='submit' value='Search' />
