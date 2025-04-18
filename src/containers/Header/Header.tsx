@@ -1,7 +1,6 @@
 /* Header.tsx */
 
 // Import scss styles
-import { Link } from 'react-router-dom';
 import './Header.scss';
 
 import AddIcon from '@mui/icons-material/Add';
