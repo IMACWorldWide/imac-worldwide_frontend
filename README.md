@@ -56,3 +56,7 @@ To preview the production build, run:
 ```bash
 npm run preview
 ```
+
+## Backend
+
+To run the backend locally, clone the repository from [IMAC WorldWide Backend](https://github.com/IMACWorldWide/imac-worldwide_backend) and follow the setup instructions in its README file. Ensure the backend is running before starting the frontend to enable full functionality.
